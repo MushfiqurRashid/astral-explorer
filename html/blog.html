@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Astral Explorer Blog</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and container styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Blog header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #1a1a1a;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #ffcc00;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-bottom: 0;
+        }
+
+        /* Blog grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Blog post */
+        .blog-post {
+            background-color: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: scale(1.05);
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .blog-post .content {
+            padding: 20px;
+        }
+
+        .blog-post h2 {
+            color: #ffcc00;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .blog-post p {
+            color: #bbb;
+            font-size: 1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .blog-post a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #1a1a1a;
+            color: #aaa;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .blog-post h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .blog-post h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Blog Header -->
+    <header>
+        <h1>Astral Explorer Blog</h1>
+        <p>Your gateway to the stars, space exploration, and cosmic wonders.</p>
+    </header>
+
+    <!-- Blog Container -->
+    <div class="container">
+
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+
+            <!-- Blog Post 1 -->
+            <div class="blog-post">
+                <img src="https://i.imgur.com/qm8bpKe.jpg" alt="Nebula">
+                <div class="content">
+                    <h2>The Wonders of Nebulae</h2>
+                    <p>Explore the beauty and mysteries of nebulae, the vast stellar nurseries where stars are born. From the Orion Nebula to the Eagle Nebula, dive into the heart of these celestial marvels.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-post">
+                <img src="https://i.imgur.com/NcYps3m.jpg" alt="Exoplanets">
+                <div class="content">
+                    <h2>Hunting for Exoplanets</h2>
+                    <p>Join the search for distant worlds beyond our solar system. Learn about the latest exoplanet discoveries and what they could tell us about life beyond Earth.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-post">
+                <img src="https://i.imgur.com/TkXyZRU.jpg" alt="Black Holes">
+                <div class="content">
+                    <h2>Unveiling Black Holes</h2>
+                    <p>Black holes are among the universe's most enigmatic objects. Discover how they form, their role in galaxies, and what happens when something falls into one.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="blog-post">
+                <img src="https://i.imgur.com/QDBNHoH.jpg" alt="Star Formation">
+                <div class="content">
+                    <h2>Birth of Stars</h2>
+                    <p>Learn about the incredible process of star formation, from the collapse of molecular clouds to the ignition of nuclear fusion at a star's core.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us into the cosmos at <a href="#">Astral Explorer</a></p>
+    </footer>
+
+</body>
+</html>
