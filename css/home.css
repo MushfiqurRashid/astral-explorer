@@ -1,0 +1,44 @@
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#home h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #111;
+}
+
+#home p {
+  font-size: 18px;
+  margin: 20px 0 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+#home .cta {
+  margin-top: 30px;
+}
+
+#home .cta a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#home .cta a:hover {
+  background-color: #0056b3;
+}
